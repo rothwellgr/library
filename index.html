@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <title>title</title>
+</head>
+<body>
+
+    <div id="cardsContainer" class="cards">
+    </div>
+
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>
+                    Title:
+                    <input id="inputTitle" type="text" required />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Author:
+                    <input id="inputAuthor" type="text" required />
+                </label>
+            </p>
+            <div class="flexButtons">
+                <button id="confirmBtn" value="default">Confirm</button>
+                <button value="cancel" id="cancel" formmethod="dialog">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <div>
+        <button id="showDialog">New Book</button>
+    </div>
+ 
+    <script src="./script.js"></script>
+</body>
+</html>
